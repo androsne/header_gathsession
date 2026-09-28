@@ -1,0 +1,30 @@
+@use "../abstracts" as a;
+
+.hero_content-features {
+  @include a.flex-list;
+  gap: 40px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: a.$white;
+    font-size: 14px;
+    font-weight: 600;
+
+    img {
+      background-color: a.$feature;
+      padding: 12px;
+      border-radius: 16px;
+      width: 32px;
+      height: 32px;
+      box-sizing: content-box;
+      flex-shrink: 0;
+    }
+
+    span {
+      display: inline-block;
+      line-height: 1.6;
+    }
+  }
+}
