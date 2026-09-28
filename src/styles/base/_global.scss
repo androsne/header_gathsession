@@ -1,1 +1,24 @@
 //Root variables, selection styles, HTML/body base styles (non-typography related), and smooth scrolling.
+
+@use "../abstracts" as a;
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  aspect-ratio: 1920 / 1080;
+  background-color: a.$bg-grey;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
+  padding-right: 120px;
+}

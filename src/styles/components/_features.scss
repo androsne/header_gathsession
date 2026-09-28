@@ -3,6 +3,7 @@
 .hero_content-features {
   @include a.flex-list;
   gap: 40px;
+  margin-bottom: 120px;
 
   li {
     display: flex;
